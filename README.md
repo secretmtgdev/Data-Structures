@@ -2,7 +2,7 @@
 The idea behind this repository is to be a centralized space in which I can improve upon my JavaScript and Data Structures/Algorithm skills.
 
 ## Implementation of Data Structures
-Week  --> Topic <br />
+week | topic
 9/9       Lists (array/linked) <br />
 9/16      Trees (binary) <br />
 9/23      HashTables (open addressing/separate chaining) <br />
