@@ -72,6 +72,20 @@ export default class LinkedList {
    */
   removeAtIndex(index) {
     this.checkInBounds(index);
+
+    // front case
+    if (index === 0) {
+      this.head = this.head.next;
+    } else {
+      let currIndex = 0;
+      let currNode = this.head;
+      while (currIndex < index - 1) {
+        currNode = currNode.next;
+        currIndex++;
+      }
+      currNode.next = currNode.next.next;
+    }
+
     this.size--;
   }
 
