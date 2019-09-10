@@ -24,7 +24,7 @@ Thursday       Medium Problem
 Friday         Difficult Problem
 Saturday       Real world problem 1 
 Sunday         Real world problem 2 
-<pre>
+</pre>
 
 ## Implementation of Algorithms 
 <pre>
