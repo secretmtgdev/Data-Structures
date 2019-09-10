@@ -1,10 +1,14 @@
 # Data Structures
 The idea behind this repository is to be a centralized space in which I can improve upon my JavaScript and Data Structures/Algorithm skills. Inspiration stems from the following: 
-UW: CSE 142, Computer Programming I
-UW: CSE 143, Computer Programming II
-UW: CSE 332, Data Structures and Parallelism 
-UW: CSE 421, Introduction to Algorithms
-Amazon 
+- UW: CSE 142, Computer Programming I
+- UW: CSE 143, Computer Programming II
+- UW: CSE 332, Data Structures and Parallelism 
+- UW: CSE 421, Introduction to Algorithms
+- Amazon 
+- Geeksforgeeks 
+- Techsith
+- MDN
+- W3
 
 ## Implementation of Data Structures
 <pre>
@@ -52,3 +56,17 @@ Week    --> Topic
 1/13        Heaps (min/max)
 1/20        Network flows
 </pre>
+
+#### Note   
+Along the way the following are also to be covered as I grow and develop:
+1. JavaScript
+  a. Prototypical Inheritance 
+  b. Classes
+  c. Closure 
+  d. This keyword
+  e. Data types
+2. OOP
+  a. Inheritance 
+  b. Polymorphism 
+  c. Encapsulation 
+  d. Abstraction 
