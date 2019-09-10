@@ -2,6 +2,7 @@
 The idea behind this repository is to be a centralized space in which I can improve upon my JavaScript and Data Structures/Algorithm skills.
 
 ## Implementation of Data Structures
+<pre>
 Week  --> Task <br />
 9/9       Lists (array/linked) <br />
 9/16      Trees (binary) <br />
@@ -11,6 +12,7 @@ Week  --> Task <br />
 10/14     Stacks & Queues  <br />
 10/21     Arrays <br />
 10/28     Strings <br />
+</pre>
 
 ### Week to week basis 
 Day        --> Task <br />
