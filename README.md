@@ -26,13 +26,13 @@ Week  --> Task
 ### Week to week basis 
 <pre>
 Day        --> Task
-Monday         Implementation of add, remove, search 
-Tuesday        Implementation of other common methods 
-Wednesday      Easy Problem 
-Thursday       Medium Problem 
-Friday         Difficult Problem
-Saturday       Real world problem 1 
-Sunday         Real world problem 2 
+Monday         Research
+Tuesday        Research/implementation 
+Wednesday      Implmentation
+Thursday       Easy Problem 
+Friday         Medium Problem
+Saturday       Difficult Problem
+Sunday         Real world problem 1
 </pre>
 
 ## Implementation of Algorithms 
