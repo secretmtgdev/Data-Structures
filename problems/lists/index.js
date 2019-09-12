@@ -18,16 +18,15 @@ import LinkedList from "../../data-structures/Lists/LinkedList/LinkedList.js";
 
   function linkedListTests() {
     var linkedList = new LinkedList();
-    var lastPerson = -1;
+    var simpleLastPersonStanding = -1;
+    var complexLastPersonStanding = -1;
     resetList(linkedList);
-    lastPerson = simpleJosephus(linkedList);
-    console.assert(lastPerson === 1, {
-      message: `messed up the algorithm, last person found @${lastPerson}`
-    });
+    simpleLastPersonStanding = simpleJosephus(linkedList);
+
     resetList(linkedList);
-    lastPerson = complexJosephus(linkedList.size);
-    console.assert(lastPerson === 1, {
-      message: `messed up the algorithm, last person found @${lastPerson}`
+    complexLastPersonStanding = complexJosephus(linkedList.size);
+    console.assert(simpleLastPersonStanding === complexLastPersonStanding, {
+      message: `messed up the algorithm, last person found @${simpleLastPersonStanding} & ${complexLastPersonStanding}`
     });
   }
 
@@ -40,8 +39,16 @@ import LinkedList from "../../data-structures/Lists/LinkedList/LinkedList.js";
    */
   function resetList(list) {
     list.clear();
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < 5; i++) {
       list.add(i + 1);
+    }
+    if (list instanceof LinkedList) {
+      list.reverse();
+      var currNode = list.head;
+      while (currNode.next) {
+        currNode = currNode.next;
+      }
+      currNode.next = list.head;
     }
   }
 
@@ -60,16 +67,17 @@ import LinkedList from "../../data-structures/Lists/LinkedList/LinkedList.js";
     // handle singly circular linkedlist
     if (list instanceof LinkedList) {
       var currNode = list.head;
-      while (currNode.next) {
+      while (currNode.next && list.size > 1) {
         var remRef = currNode;
         // axe off the person
         if (currentPerson % 2 === 0) {
-          list.removeAtIndex(currentPerson % list.size);
+          list.removeAtIndex((currentPerson - 1) % list.size);
         }
         currentPerson++;
-        currNode = remRef.next;
+        currNode = remRef;
+        returnPerson = currNode.value;
+        currNode = currNode.next;
       }
-      returnPerson = currNode.value;
     }
 
     // handle arraylist, treating it as circular

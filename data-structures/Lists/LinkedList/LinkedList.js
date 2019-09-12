@@ -36,10 +36,10 @@ export default class LinkedList {
    */
   addAtIndex(value, index) {
     this.checkInBounds(index);
+    const newNode = new LinkedListNode(value);
 
     // deal with the front case
     if (index === 0) {
-      const newNode = new LinkedListNode(value);
       newNode.next = this.head;
       this.head = newNode;
     } else {
@@ -49,7 +49,10 @@ export default class LinkedList {
         currIndex++;
         currNode = currNode.next;
       }
-      currNode.next = currNode.next.next;
+      if (currNode.next) {
+        newNode.next = currNode.next.next;
+      }
+      currNode.next = newNode;
     }
     this.size++;
   }
@@ -127,6 +130,25 @@ export default class LinkedList {
   clear() {
     this.head = null;
     this.size = 0;
+  }
+
+  /**
+   * @method reverse
+   * @description Reverses the ordering of the content in the linked list
+   */
+  reverse() {
+    if (this.size > 1) {
+      var prev = null;
+      var curr = this.head;
+      var next = null;
+      while (curr) {
+        next = curr.next;
+        curr.next = prev;
+        prev = curr;
+        curr = next;
+      }
+      this.head = prev;
+    }
   }
 
   /**
