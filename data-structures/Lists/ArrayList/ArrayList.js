@@ -89,6 +89,16 @@ export default class ArrayList {
     }
     return returnIndex;
   }
+
+  /**
+   * @method getFront
+   *
+   * @returns the front of the list
+   */
+  getFront() {
+    return this.size > 0 ? this.arr[0] : null;
+  }
+
   checkInBounds(index, limiter) {
     if (index > limiter) {
       throw new Error(`Index ${index} is out of bounds`);

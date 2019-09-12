@@ -113,6 +113,14 @@ export default class LinkedList {
   }
 
   /**
+   * @method getFront
+   * @returns the front of the list
+   */
+  getFront() {
+    return this.head;
+  }
+
+  /**
    * @method clear
    * @description Clears the contents of the array
    */
