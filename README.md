@@ -58,6 +58,9 @@ Week    --> Topic
 </pre>
 
 #### Note   
+DUE TO CORS YOU MUST HAVE A SERVER INSTANCE RUNNING!
+fix: run _npm install static-server -g_ to install a simple server, type in _static server_ into the correct directory, and open up _localhost:9080_
+
 Along the way the following are also to be covered as I grow and develop:
 1. JavaScript
   a. Prototypical Inheritance 
@@ -70,3 +73,5 @@ Along the way the following are also to be covered as I grow and develop:
   b. Polymorphism 
   c. Encapsulation 
   d. Abstraction 
+  
+  
