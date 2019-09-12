@@ -90,7 +90,7 @@ export default class LinkedList {
   }
 
   /**
-   * @method find
+   * @method indexOf
    * @description Finds the index of the targetvalue
    *              RT: O(n)
    *              SC: O(1)
@@ -99,15 +99,44 @@ export default class LinkedList {
    *
    * @returns node reference if found, otherwise null
    */
-  find(targetValue) {
+  indexOf(targetValue) {
     let currNode = this.head;
+    let index = 0;
     while (currNode !== null) {
       if (currNode.value === targetValue) {
-        return currNode;
+        return index;
       }
+      currNode = currNode.next;
       index++;
     }
-    return null;
+    return -1;
+  }
+
+  /**
+   * @method clear
+   * @description Clears the contents of the array
+   */
+  clear() {
+    this.head = null;
+    this.size = 0;
+  }
+
+  /**
+   * @method isEmpty
+   * @description Checks if the list is empty
+   * @returns True if the list is empty, false otherwise
+   */
+  isEmpty() {
+    return this.size === 0;
+  }
+
+  /**
+   * @method size
+   * @description Gets the size of the list
+   * @returns The size of the list
+   */
+  size() {
+    return this.size;
   }
 
   /**
@@ -117,7 +146,7 @@ export default class LinkedList {
    * @param {number} index
    */
   checkInBounds(index) {
-    if (index >= this.size) {
+    if (index > this.size) {
       throw new Error(`Index ${index} is out of bounds`);
     }
   }

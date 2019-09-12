@@ -8,7 +8,7 @@
 
 export default class ArrayList {
   constructor(capacity) {
-    this.capacity = isNan(capacity) ? 10 : size > 0 ? capacity : 10;
+    this.capacity = isNaN(capacity) ? 10 : 0;
     this.size = 0;
     this.arr = new Array(this.capacity);
   }
@@ -33,14 +33,14 @@ export default class ArrayList {
   addAtIndex(value, index) {
     this.checkInBounds(index, this.capacity);
     if (this.size === this.capacity) {
-      resizeList();
+      this.resizeList();
     }
     // handle appending to the end of the list
     if (this.size === index) {
       this.arr[this.size] = value;
     } else {
       // shift right
-      for (var i = this.capacity; i > index; i--) {
+      for (var i = this.size; i > index; i--) {
         this.arr[i] = this.arr[i - 1];
       }
       this.arr[index] = value;
@@ -67,7 +67,7 @@ export default class ArrayList {
       this.arr[this.size - 1] = null;
     } else {
       // shift left
-      for (let i = index; i < this.size - 1; i++) {
+      for (let i = index; i < this.size; i++) {
         this.arr[i] = this.arr[i + 1];
       }
     }
@@ -80,7 +80,7 @@ export default class ArrayList {
    *
    * @param {*} targetValue
    */
-  find(targetValue) {
+  indexOf(targetValue) {
     let returnIndex = -1;
     for (let i = 0; i < this.size; i++) {
       if (this.arr[i] === targetValue) {
@@ -90,9 +90,36 @@ export default class ArrayList {
     return returnIndex;
   }
   checkInBounds(index, limiter) {
-    if (index >= limiter) {
+    if (index > limiter) {
       throw new Error(`Index ${index} is out of bounds`);
     }
+  }
+
+  /**
+   * @method clear
+   * @description Clears the contents of the array
+   */
+  clear() {
+    this.arr = new Array(this.capacity);
+    this.size = 0;
+  }
+
+  /**
+   * @method isEmpty
+   * @description Checks if the list is empty
+   * @returns True if the list is empty, false otherwise
+   */
+  isEmpty() {
+    return this.size === 0;
+  }
+
+  /**
+   * @method size
+   * @description Gets the size of the list
+   * @returns The size of the list
+   */
+  size() {
+    return this.size;
   }
 
   /**
