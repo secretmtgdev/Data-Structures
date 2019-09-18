@@ -89,6 +89,7 @@ export default class BST {
    ***************************/
   /**
    * @method preOrder
+   * @description traverse through a tree with regards to pre order
    * @param {BSTNode} rootNode
    */
   preOrder(rootNode) {
@@ -101,6 +102,7 @@ export default class BST {
 
   /**
    * @method inOrder
+   * @description traverse through a tree in order
    * @param {BSTNode} rootNode
    */
   inOrder(rootNode) {
@@ -113,6 +115,7 @@ export default class BST {
 
   /**
    * @method postOrder
+   * @description Traverses through a tree in a post order
    * @param {BSTNode} rootNode
    */
   postOrder(rootNode) {
@@ -120,6 +123,27 @@ export default class BST {
       this.postOrder(rootNode.left);
       this.postOrder(rootNode.right);
       console.log(rootNode.data);
+    }
+  }
+
+  /**
+   * @method levelOrder aka BFS
+   * @description Goes through a tree level by level
+   * @param {BSTNode} rootNode
+   */
+  levelOrder(rootNode) {
+    let fringe = [];
+    fringe.push(rootNode);
+
+    while (fringe.length > 0) {
+      let currNode = fringe.shift();
+      console.log(`Looking at node ${currNode}`);
+      if (currNode.left) {
+        fringe.push(currNode.left);
+      }
+      if (currNode.right) {
+        fringe.push(currNode.right);
+      }
     }
   }
 }
