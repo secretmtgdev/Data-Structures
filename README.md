@@ -1,4 +1,4 @@
-# Data Structures
+# Data Structures - Follow my leetcode @mike3651 to see my latest submissions!
 The idea behind this repository is to be a centralized space in which I can improve upon my JavaScript and Data Structures/Algorithm skills. Inspiration stems from the following: 
 - UW: CSE 142, Computer Programming I
 - UW: CSE 143, Computer Programming II
@@ -74,4 +74,22 @@ Along the way the following are also to be covered as I grow and develop:
   c. Encapsulation 
   d. Abstraction 
   
+  ## Mock interview lineup 
+  <pre>
+  Day        Company/interview type
+  10/5       **Amazon** - Online assessment
+  10/12      **Bloomberg** - Online assessment
+  10/19      **Adobe** - Online assessment
+  10/26      **Uber** - Online assessment
+  11/2       **Facebook** - Online assessment
+  11/9       **Google** - Online assessment
+  11/16      **Microsoft** - Online assessment
+  11/23      **Amazon** - Phone interview
+  11/30      **Bloomberg** - Phone interview
+  12/7       **Adobe** - Phone interview
+  12/14      **Uber** - Phone interview
+  12/21      **Facebook** - Phone interview
+  12/28      **Google** - Phone interview
+  1/4        **Microsoft** - Phone interview
   
+  </pre>    
