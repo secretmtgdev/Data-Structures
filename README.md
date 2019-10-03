@@ -1,4 +1,6 @@
 # Data Structures - Follow my leetcode @mike3651 to see my latest submissions!
+__UPDATE__: So I decided to buy a subscription for leetcode since I decided that it would be worth it in the long while to have access to mock interviews as well as being able to tackle a larger set of problems.
+
 The idea behind this repository is to be a centralized space in which I can improve upon my JavaScript and Data Structures/Algorithm skills. Inspiration stems from the following: 
 - UW: CSE 142, Computer Programming I
 - UW: CSE 143, Computer Programming II
@@ -74,22 +76,21 @@ Along the way the following are also to be covered as I grow and develop:
   c. Encapsulation 
   d. Abstraction 
   
-  ## Mock interview lineup 
+  ## Mock interview plan
   <pre>
   Day        Company/interview type
-  10/5       Amazon - Online assessment
-  10/12      Bloomberg - Online assessment
-  10/19      Adobe - Online assessment
-  10/26      Uber - Online assessment
-  11/2       Facebook - Online assessment
-  11/9       Google - Online assessment
-  11/16      Microsoft - Online assessment
-  11/23      Amazon - Phone interview
-  11/30      Bloomberg - Phone interview
-  12/7       Adobe - Phone interview
-  12/14      Uber - Phone interview
-  12/21      Facebook - Phone interview
-  12/28      Google - Phone interview
-  1/4        Microsoft - Phone interview
-  
+  10/5       Online assessment - Amazon 
+  10/12      Online assessment - Bloomberg 
+  10/19      Online assessment - Adobe 
+  10/26      Online assessment - Uber 
+  11/2       Online assessment - Facebook
+  11/9       Online assessment - Google 
+  11/16      Online assessment - Microsoft  
+  11/23      Phone interview   - Amazon 
+  11/30      Phone interview   - Bloomberg 
+  12/7       Phone interview   - Adobe 
+  12/14      Phone interview   - Uber 
+  12/21      Phone interview   - Facebook  
+  12/28      Phone interview   - Google 
+  1/4        Phone interview   - Microsoft  
   </pre>    
