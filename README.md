@@ -77,19 +77,19 @@ Along the way the following are also to be covered as I grow and develop:
   ## Mock interview lineup 
   <pre>
   Day        Company/interview type
-  10/5       **Amazon** - Online assessment
-  10/12      **Bloomberg** - Online assessment
-  10/19      **Adobe** - Online assessment
-  10/26      **Uber** - Online assessment
-  11/2       **Facebook** - Online assessment
-  11/9       **Google** - Online assessment
-  11/16      **Microsoft** - Online assessment
-  11/23      **Amazon** - Phone interview
-  11/30      **Bloomberg** - Phone interview
-  12/7       **Adobe** - Phone interview
-  12/14      **Uber** - Phone interview
-  12/21      **Facebook** - Phone interview
-  12/28      **Google** - Phone interview
-  1/4        **Microsoft** - Phone interview
+  10/5       Amazon - Online assessment
+  10/12      Bloomberg - Online assessment
+  10/19      Adobe - Online assessment
+  10/26      Uber - Online assessment
+  11/2       Facebook - Online assessment
+  11/9       Google - Online assessment
+  11/16      Microsoft - Online assessment
+  11/23      Amazon - Phone interview
+  11/30      Bloomberg - Phone interview
+  12/7       Adobe - Phone interview
+  12/14      Uber - Phone interview
+  12/21      Facebook - Phone interview
+  12/28      Google - Phone interview
+  1/4        Microsoft - Phone interview
   
   </pre>    
