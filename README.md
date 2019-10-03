@@ -78,7 +78,7 @@ Along the way the following are also to be covered as I grow and develop:
   
   ## Mock interview plan
   <pre>
-  Day        Company/interview type
+  Day/Week   Interview type/Company
   10/5       Online assessment - Amazon 
   10/12      Online assessment - Bloomberg 
   10/19      Online assessment - Adobe 
@@ -93,4 +93,11 @@ Along the way the following are also to be covered as I grow and develop:
   12/21      Phone interview   - Facebook  
   12/28      Phone interview   - Google 
   1/4        Phone interview   - Microsoft  
+  1/11       Onsite interview  - Amazon
+  1/18       Onsite interview  - Bloomberg
+  1/25       Onsite interview  - Adobe
+  2/1        Onsite interview  - Uber
+  2/8        Onsite interview  - Facebook
+  2/15       Onsite interview  - Google
+  2/22       Onsite interview  - Microsoft
   </pre>    
